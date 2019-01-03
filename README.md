@@ -12,7 +12,7 @@ data descriptor for image set classification[J]. Computational Visual Media, 201
 
 BibTex :   
 @article{Chen2018Component,  
- &nbsp &nbsp      title={Component SPD matrices: A low-dimensional discriminative data descriptor for image set classification},  
+&emsp    title={Component SPD matrices: A low-dimensional discriminative data descriptor for image set classification},  
       author={Chen, Kai-Xuan and Wu, Xiao-Jun},  
       journal={Computational Visual Media},  
       volume={4},  
