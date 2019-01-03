@@ -10,7 +10,8 @@ Please cite the following paper (more theoretical and technical details) if your
 Kai-Xuan Chen, Xiao-Jun Wu. Component SPD matrices: A low-dimensional discriminative
 data descriptor for image set classification[J]. Computational Visual Media, 2018. 
 
-BibTex :   
+BibTex : 
+```
 @article{Chen2018Component,  
       title={Component SPD matrices: A low-dimensional discriminative data descriptor for image set classification},  
       author={Chen, Kai-Xuan and Wu, Xiao-Jun},  
@@ -21,6 +22,7 @@ BibTex :
       year={2018},  
       publisher={Springer}  
 }  
+```
 
 THE ETH-80 dataset is needed to be downloaded(https://github.com/Kai-Xuan/ETH-80/),  
 and put 8 filefolders(visual image setd from 8 different categories) into filefolder '.\ETH-80\'.  
