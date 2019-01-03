@@ -28,11 +28,12 @@ Please run 'read_ETH.m' to generate CSPD matrices. Then run 'run_ETH.m' for imag
 
 
 For classification, we employ four NN classifiers and four discriminative classifiers in this source code(Version 2.0).  
-Ker-SVM : Qilong Wang implemented a one-vs-all classifier [37] by using LIBSVM package in the paper:  
-	Q. Wang, P. Li, W. Zuo, and L. Zhang. Raid-g: Robust estimation of approximate infinite dimensional gaussian with application to material recognition. In Proceedings of the IEEE Conference on   Computer Vision and Pattern Recognition, pages 4433-4441, 2016.  
+
+Ker-SVM : Qilong Wang implemented a one-vs-all classifier by using LIBSVM package in the paper:  
+Q. Wang, P. Li, W. Zuo, and L. Zhang. Raid-g: Robust estimation of approximate infinite dimensional gaussian with application to material recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 4433-4441, 2016.  
+
 LogEKSR : This method was proposed in the paper:  
-	P. Li, Q. Wang, W. Zuo, and L. Zhang. Log-euclidean kernels for sparse representation and dictionary learning.   
-	In Proceedings of the IEEE International Conference on Computer Vision, pages 1601-1608, 2013.  
+P. Li, Q. Wang, W. Zuo, and L. Zhang. Log-euclidean kernels for sparse representation and dictionary learning. In Proceedings of the IEEE International Conference on Computer Vision, pages 1601-1608, 2013.
+
 COV-LDA/COV-PLS :  This method was proposed in the paper:  
-	R. Wang, H. Guo, L. S. Davis, and Q. Dai. Covariance discriminative learning: A natural and efficient approach to image set classification.  
-	In Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on, pages 2496-2503. IEEE, 2012.  
+R. Wang, H. Guo, L. S. Davis, and Q. Dai. Covariance discriminative learning: A natural and efficient approach to image set classification. In Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on, pages 2496-2503. IEEE, 2012.  
