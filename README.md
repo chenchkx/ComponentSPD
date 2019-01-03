@@ -1,7 +1,11 @@
 Component symmetric positive definite matrices (CSPD) matrices for describing image sets
+
 CSPD: A low-dimensional discriminative data descriptor(a special type of improved covariance descriptors) than traditional covariance descriptors for image set classification
+
 Written by Kai-Xuan Chen (e-mail: kaixuan_chen_jsh@163.com)
+
 version 2.0 -- December/2018 
+
 version 1.0 -- June/2017 
 
 Please cite the following paper (more theoretical and technical details) if your are using this code:
@@ -22,8 +26,6 @@ BibTex :
       publisher={Springer}
 }
 
-THE ETH-80 dataset is needed to be downloaded(https://github.com/Kai-Xuan/ETH-80/), 
-and put 8 filefolders(visual image setd from 8 different categories) into filefolder '.
 Please run 'read_ETH.m' to generate CSPD matrices. Then run 'run_ETH.m' for image set classification. 
 
 
