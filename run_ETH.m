@@ -1,5 +1,5 @@
 %%  The average recognition rates 
-%   CSPD: a special type of Improved Covariance Descriptors(Improved CovDs or iCovDs)
+%   CSPD: A low-dimensional discriminative data descriptor than traditional covariance descriptors for image set classification
 %   Written by Kai-Xuan Chen (e-mail: kaixuan_chen_jsh@163.com)
 %   version 2.0 -- December/2018 
 %   version 1.0 -- June/2017 
