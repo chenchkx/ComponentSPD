@@ -162,10 +162,7 @@ function option = set_Option(name,type_Block)
     option.out_File_Name = [option.name_Dataset,'_resized',num2str(option.resized_Row),'M',num2str(option.resized_Col),'_blockSize',...
         num2str(option.block_Row),'M',num2str(option.block_Col),'_stepSize',num2str(option.step_Row),'M',num2str(option.step_Col),'_',type_Block,'.mat'];
     option.output_Path = [option.mat_Path,'\',option.out_File_Name];
-    option.dis_Matrix_Path = [option.mat_Path,'\','disMatrix','_',option.name_Dataset,'_resized',num2str(option.resized_Row),'M',num2str(option.resized_Col),...
-        '_blockSize',num2str(option.block_Row),'M',num2str(option.block_Col),'_stepSize',num2str(option.step_Row),'M',num2str(option.step_Col),'_',type_Block,'.mat'];
-    option.timeNumber_Matrix_Path = [option.mat_Path,'\','tnMatrix_',option.name_Dataset,'_resized',num2str(option.resized_Row),'M',num2str(option.resized_Col),...
-        '_blockSize',num2str(option.block_Row),'M',num2str(option.block_Col),'_stepSize',num2str(option.step_Row),'M',num2str(option.step_Col),'_',type_Block,'.mat'];           
-    option.res_Output = [option.res_Path,'\',option.name_Dataset,'_numGallery',num2str(option.num_Gallery),'_resized',num2str(option.resized_Row),'M',num2str(option.resized_Col),'_blockSize',...
-        num2str(option.block_Row),'M',num2str(option.block_Col),'_stepSize',num2str(option.step_Row),'M',num2str(option.step_Col),'_',type_Block,'.mat'];
+    option.dis_Matrix_Path = [option.mat_Path,'\','disMatrix','_',option.out_File_Name];
+    option.timeNumber_Matrix_Path = [option.mat_Path,'\','tnMatrix_',option.out_File_Name];           
+    option.res_Output = [option.res_Path,'\','_numGallery',num2str(option.num_Gallery),option.out_File_Name];
 end

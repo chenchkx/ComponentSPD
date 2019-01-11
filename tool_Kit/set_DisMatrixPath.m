@@ -21,8 +21,6 @@
 %   } 
 
 function new_Opt = set_DisMatrixPath(option,worker_th)
-       option.dis_Matrix_Output = [option.mat_Path,'\','disMatrix','_','par',num2str(worker_th),'_',option.name_Dataset,'_resized',...
-                    num2str(option.resized_Row),'M',num2str(option.resized_Col),'_blockSize',num2str(option.block_Row),'M',num2str(option.block_Col),...
-                    '_stepSize',num2str(option.step_Row),'M',num2str(option.step_Col),'_',option.type_Block,'.mat'];  
+        option.dis_Matrix_Output = [option.mat_Path,'\','disMatrix','_','par',num2str(worker_th),'_',option.out_File_Name];  
         new_Opt = option;
 end
