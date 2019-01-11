@@ -41,20 +41,20 @@ function final_ImprovedCovDs = com_ImprovedCovDs(block_Matrix,option)
                 logm_Block_Representations(:,:,blo_th) = logm_TempCov;
             end
             vec_Block_Representations = reshape(logm_Block_Representations,dim*dim,num_Block);
-        case 'Gauss'
-            logm_Block_Representations = zeros(dim+1,dim+1,num_Block);
-            for blo_th = 1:num_Block
-                temp_Block = block_Matrix(:,:,blo_th);
-                temp_Cov = embed_Gauss2SPD(temp_Block,option);
-                if norm(temp_Cov,'fro') == 0 && trace(temp_Cov) == 0
-                    temp_Cov = eye(dim);
-                else
-                    temp_Cov = temp_Cov + 0.001*trace(temp_Cov)*eye(dim+1);
-                end
-                logm_TempCov = logm(temp_Cov);
-                logm_Block_Representations(:,:,blo_th) = logm_TempCov;
-            end     
-            vec_Block_Representations = reshape(logm_Block_Representations,(dim+1)*(dim+1),num_Block);
+%         case 'Gauss'
+%             logm_Block_Representations = zeros(dim+1,dim+1,num_Block);
+%             for blo_th = 1:num_Block
+%                 temp_Block = block_Matrix(:,:,blo_th);
+%                 temp_Cov = embed_Gauss2SPD(temp_Block,option);
+%                 if norm(temp_Cov,'fro') == 0 && trace(temp_Cov) == 0
+%                     temp_Cov = eye(dim);
+%                 else
+%                     temp_Cov = temp_Cov + 0.001*trace(temp_Cov)*eye(dim+1);
+%                 end
+%                 logm_TempCov = logm(temp_Cov);
+%                 logm_Block_Representations(:,:,blo_th) = logm_TempCov;
+%             end     
+%             vec_Block_Representations = reshape(logm_Block_Representations,(dim+1)*(dim+1),num_Block);
     end
     
     ImprovedCovDs = vec_Block_Representations'*vec_Block_Representations;

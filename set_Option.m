@@ -1,8 +1,8 @@
 %%  set option for deifferent dataset
 %   input : 
 %         param 1 : the name of dataset
-%         param 2 : the descriptions of sub-image sets: {Gauss,CovDs}
-%                   CovDs/Gauss: represent sub-image sets by traditional CovDs/Gaussian model
+%         param 2 : the descriptions of sub-image sets: CovDs
+%                   CovDs: represent sub-image sets by traditional CovDs
 %   output:
 %         option : the struct of parameters  
 %   
