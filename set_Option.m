@@ -48,53 +48,23 @@ function option = set_Option(name,type_Block)
                                                                                 % label of probe sample
             option.type_Image = '.png';                                         % suffix of images
             option.train_Rate = 1;                                              % the train_Rate for PCA
-            option.if_PCA = 0;                                                  % 1£ºPCA  0£º PCA unnecessary
+            option.if_PCA = 0;                                                  % 1Â£ÂºPCA  0Â£Âº PCA unnecessary
             option.type_PCA = 'topK_PCA';                                       % param{'rate_PCA','topK_PCA'}
             option.rate_PCA = 0.99;                                             % energy need to be retained for 'rate_PCA'
             option.topK_PCA = 15;                                               % components need to be retained for 'topK_PCA'
             option.resized_Row = 24;                                            % the height of the resized image
             option.resized_Col = 24;                                            % the width of the resized image
-            option.block_Row = 6;                                               % the height of the blocks
-            option.block_Col = 6;                                               % the width of the blocks
-            option.step_Row = 3;                                                % step size in the row direction
-            option.step_Col = 3;                                                % step size in the column direction
+            option.block_Row = 4;                                               % the height of the blocks
+            option.block_Col = 4;                                               % the width of the blocks
+            option.step_Row = 4;                                                % step size in the row direction
+            option.step_Col = 4;                                                % step size in the column direction
             option.pre_Set = '';                                                % prefix string of each image set  
             option.pre_Class = '';                                              % prefic string of each class
             option.LogEK_N = 1;                                                 % paramter for LogEKSR
             option.latentDim_PLS = option.num_Class + 1;                        % latent dimension for COV-PLS
             option.type_Block = type_Block;                                     % the descriptions of sub-image sets: {Gauss,CovDs}
             option.beta_Gauss = 0.1;                                            % paramter for Gaussian embedding
-        
-        case 'MDSD'
-            option.root_Path = 'E:\WORKSPACE\DATASET\MDSD\';
-            option.mat_Path = '.\data\mat_MDSD';
-            option.res_Path = '.\data\res_MDSD';
-            option.name_Dataset = 'MDSD';
-            option.num_Ite = 100;
-            option.num_Class = 13;
-            option.num_Sample = 10;
-            option.num_Gallery = 7;
-            option.num_Probe = option.num_Sample - option.num_Gallery;
-            option.label_Gallery = reshape(ones(option.num_Gallery,option.num_Class)*diag([1:option.num_Class]),[1,option.num_Class*option.num_Gallery]);
-            option.label_Probe = reshape(ones(option.num_Probe,option.num_Class)*diag([1:option.num_Class]),[1,option.num_Class*option.num_Probe]);
-            option.type_Image = '.jpg';
-            option.train_Rate = 1;  
-            option.if_PCA = 0; 
-            option.type_PCA = 'topK_PCA';
-            option.rate_PCA = 0.99; 
-            option.topK_PCA = 12; 
-            option.resized_Row = 24;
-            option.resized_Col = 24;
-            option.block_Row = 12;
-            option.block_Col = 12;
-            option.step_Row = 3;
-            option.step_Col = 3;  
-            option.pre_Set = 's';
-            option.pre_Class = 'C';
-            option.LogEK_N = 1;                                                
-            option.latentDim_PLS = option.num_Class + 1;                        
-            option.type_Block = type_Block;                                     
-            option.beta_Gauss = 2;                                            
+                                                
             
         case 'Virus'
             option.root_Path = 'E:\WORKSPACE\DATASET\Virus\Virus\';
