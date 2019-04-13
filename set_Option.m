@@ -1,4 +1,4 @@
-%%  set option for deifferent dataset
+%%  set option for different datasets
 %   input : 
 %         param 1 : the name of dataset
 %         param 2 : the descriptions of sub-image sets: CovDs
