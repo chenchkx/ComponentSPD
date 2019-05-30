@@ -48,7 +48,7 @@ function option = set_Option(name,type_Block)
                                                                                 % label of probe sample
             option.type_Image = '.png';                                         % suffix of images
             option.train_Rate = 1;                                              % the train_Rate for PCA
-            option.if_PCA = 0;                                                  % 1Â£ÂºPCA  0Â£Âº PCA unnecessary
+            option.if_PCA = 0;                                                  % 1£ºPCA  0£ºPCA unnecessary
             option.type_PCA = 'topK_PCA';                                       % param{'rate_PCA','topK_PCA'}
             option.rate_PCA = 0.99;                                             % energy need to be retained for 'rate_PCA'
             option.topK_PCA = 15;                                               % components need to be retained for 'topK_PCA'
@@ -59,7 +59,7 @@ function option = set_Option(name,type_Block)
             option.step_Row = 4;                                                % step size in the row direction
             option.step_Col = 4;                                                % step size in the column direction
             option.pre_Set = '';                                                % prefix string of each image set  
-            option.pre_Class = '';                                              % prefic string of each class
+            option.pre_Class = '';                                              % prefix string of each class
             option.LogEK_N = 1;                                                 % paramter for LogEKSR
             option.latentDim_PLS = option.num_Class + 1;                        % latent dimension for COV-PLS
             option.type_Block = type_Block;                                     % the descriptions of sub-image sets: {Gauss,CovDs}
