@@ -26,7 +26,6 @@
 %      publisher={Springer}
 %   } 
 function option = set_Option(name,type_Block)
-    addpath(genpath('tool_Mat'));
     addpath(genpath('tool_Kit'));
     addpath(genpath('CDL')); 
     addpath(genpath('LogEK_SR'));
