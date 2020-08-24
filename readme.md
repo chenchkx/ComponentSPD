@@ -1,5 +1,4 @@
-This repository includes two representations for describing image set.
-
+This repository includes two representations for describing image sets.
 
  - CSPD: A simple but very effective framework to generate low-dimensional discriminative representation for image set classification
 
