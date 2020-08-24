@@ -1,6 +1,6 @@
 This repository includes two representations for describing image sets.
 
- - CSPD: A simple but very effective framework to generate low-dimensional discriminative representation for image set classification
+ - CSPD: A simple but very effective framework to generate low-dimensional discriminative representation.
 
  - iCovDs: Also a more discriminative representation (it can be considered as an improved version of CSPD).
 
