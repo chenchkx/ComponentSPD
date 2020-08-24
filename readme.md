@@ -34,3 +34,7 @@ BibTex :
 }
 ```
 
+
+<br>Also, you find more discriminative representation for image set classification at:</br>
+  1. RieCovDs:  https://github.com/Kai-Xuan/RiemannianCovDs
+  2. AidCovDs:  https://github.com/Kai-Xuan/AidCovDs
